@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="solo12_ros2control" params="prefix" >
+
+    <!-- ROS2_CONTROL tag name: -->
+    <xacro:property name="name" value="GazeboSystem"/>
+    
+    <!-- ===== Gazebo ROS2_CONTROL plugin ===== -->
+    <!--
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <robotSimType>gazebo_ros2_control/DefaultRobotHWSim</robotSimType>
+            <robot_param>robot_description</robot_param>
+            <robot_param_node>robot_state_publisher</robot_param_node>
+            <parameters>$(find solo2_gazebo)/config/controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+    -->
+    
+    <!-- ========== ROS2 CONTROL ========== -->
+
+    <ros2_control name="${name}" type="system">
+
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+
+        <!-- FL_HAA -->
+        <joint name="${prefix}FL_HAA">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- FL_HFE -->
+        <joint name="${prefix}FL_HFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- FL_KFE -->
+        <joint name="${prefix}FL_KFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- FR_HAA -->
+        <joint name="${prefix}FR_HAA">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- FR_HFE -->
+        <joint name="${prefix}FR_HFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- FR_KFE -->
+        <joint name="${prefix}FR_KFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- HL_HAA -->
+        <joint name="${prefix}HL_HAA">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- HL_HFE -->
+        <joint name="${prefix}HL_HFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- HL_KFE -->
+        <joint name="${prefix}HL_KFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- HR_HAA -->
+        <joint name="${prefix}HR_HAA">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- HR_HFE -->
+        <joint name="${prefix}HR_HFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+        <!-- HR_KFE -->
+        <joint name="${prefix}HR_KFE">
+            <command_interface name="position">
+                <param name="min">-${pi}</param>
+                <param name="max">${pi}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>
+
+    </ros2_control>
+
+  </xacro:macro>
+
+</robot>
