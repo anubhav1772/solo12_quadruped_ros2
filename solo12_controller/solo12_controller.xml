@@ -1,0 +1,9 @@
+<library path="solo12_controller">
+  <class name="solo12_controller/RobotController"
+         type="solo12_controller::RobotController"
+         base_class_type="controller_interface::ControllerInterface">
+    <description>
+      Robot controller plugin for solo12.
+    </description>
+  </class>
+</library>
