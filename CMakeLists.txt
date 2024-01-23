@@ -10,5 +10,8 @@ find_package(ament_cmake REQUIRED)
 
 add_subdirectory(solo12_description)
 add_subdirectory(solo12_gazebo)
+add_subdirectory(solo12_controller)
+add_subdirectory(solo12_hardware)
+
 
 ament_package()
