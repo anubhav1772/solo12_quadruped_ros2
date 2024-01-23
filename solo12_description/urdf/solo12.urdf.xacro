@@ -26,7 +26,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo_12_base.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo_12_base.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -37,7 +37,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo_12_base.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo_12_base.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -70,7 +70,7 @@
                 <origin rpy="0 0 0" xyz="0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_fl.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_fl.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -81,7 +81,7 @@
                 <origin rpy="0 0 0" xyz="0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_fl.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_fl.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -120,7 +120,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -131,7 +131,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -170,7 +170,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -181,7 +181,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -220,7 +220,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -231,7 +231,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -264,7 +264,7 @@
                 <origin rpy="0 0 0" xyz="0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_fr.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_fr.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -275,7 +275,7 @@
                 <origin rpy="0 0 0" xyz="0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_fr.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_fr.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -314,7 +314,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -325,7 +325,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -364,7 +364,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -375,7 +375,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -414,7 +414,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -425,7 +425,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -458,7 +458,7 @@
                 <origin rpy="0 0 0" xyz="-0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_hl.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_hl.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -469,7 +469,7 @@
                 <origin rpy="0 0 0" xyz="-0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_hl.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_hl.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -508,7 +508,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -519,7 +519,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -558,7 +558,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -569,7 +569,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_left_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -608,7 +608,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -619,7 +619,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -652,7 +652,7 @@
                 <origin rpy="0 0 0" xyz="-0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_hr.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_hr.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -663,7 +663,7 @@
                 <origin rpy="0 0 0" xyz="-0.01950 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/solo12/solo12_hip_fe_hr.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/solo12/solo12_hip_fe_hr.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -702,7 +702,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -713,7 +713,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_upper_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -752,7 +752,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -763,7 +763,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_lower_leg_right_side.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -802,7 +802,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
@@ -813,7 +813,7 @@
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
                     <mesh
-                        filename="package://solo12_description/meshes/stl/with_foot/solo_foot.stl" />
+                        filename="file://$(find solo12_description)/meshes/stl/with_foot/solo_foot.stl" />
                 </geometry>
                 <material name="grey">
                     <color rgba="0.8 0.8 0.8 1.0" />
