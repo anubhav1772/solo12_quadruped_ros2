@@ -4,11 +4,13 @@
     <xacro:macro name="solo12_gazebo" params="prefix">
 
         <!-- ===== Gazebo ROS2_CONTROL plugin ===== -->
+        <!--
         <gazebo>
             <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
-                <parameters>$(find solo12_gazebo)/config/controllers.yaml</parameters>
+                <parameters>$(find solo12_gazebo)/config/solo12_controllers.yaml</parameters>
             </plugin>
         </gazebo>
+        -->
         
         <gazebo reference="world" />
         
