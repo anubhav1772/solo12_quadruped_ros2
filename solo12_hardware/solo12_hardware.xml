@@ -1,0 +1,9 @@
+<library path="solo12_hardware">
+  <class name="solo12_hardware/RobotSystem"
+         type="solo12_hardware::RobotSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Robot hardware plugin for solo12 quadruped robot.
+    </description>
+  </class>
+</library>
