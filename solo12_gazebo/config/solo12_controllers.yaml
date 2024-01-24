@@ -4,7 +4,13 @@ controller_manager:
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
+    
+    feedforward_controller:
+      type: forward_command_controller/ForwardCommandController
 
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    
     solo12_controller:
       type: solo12_controller/RobotController
 
@@ -26,8 +32,32 @@ solo12_controller:
       
     command_interfaces:
       - position
-      - velocity
 
     state_interfaces:
       - position
       - velocity
+      - effort
+
+feedforward_controller:
+  ros__parameters:
+    joints:
+      - FL_HAA
+      - FL_HFE
+      - FL_KFE
+      - FR_HAA
+      - FR_HFE
+      - FR_KFE
+      - HL_HAA
+      - HL_HFE
+      - HL_KFE
+      - HR_HAA
+      - HR_HFE
+      - HR_KFE
+      
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+      - velocity
+      - effort
