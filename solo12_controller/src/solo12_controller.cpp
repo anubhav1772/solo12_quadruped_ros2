@@ -99,9 +99,9 @@ controller_interface::CallbackReturn RobotController::on_activate(const rclcpp_l
 {
   // clear out vectors in case of restart
   joint_position_command_interface_.clear();
-  joint_velocity_command_interface_.clear();
   joint_position_state_interface_.clear();
   joint_velocity_state_interface_.clear();
+  joint_effort_state_interface_.clear();
 
   // assign command interfaces
   for (auto & interface : command_interfaces_)
@@ -164,10 +164,6 @@ controller_interface::return_type RobotController::update(
     for (size_t i = 0; i < joint_position_command_interface_.size(); i++)
     {
       joint_position_command_interface_[i].get().set_value(point_interp_.positions[i]);
-    }
-    for (size_t i = 0; i < joint_velocity_command_interface_.size(); i++)
-    {
-      joint_velocity_command_interface_[i].get().set_value(point_interp_.velocities[i]);
     }
   }
 
