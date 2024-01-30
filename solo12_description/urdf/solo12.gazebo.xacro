@@ -4,201 +4,198 @@
     <xacro:macro name="solo12_gazebo" params="prefix">
 
         <!-- ===== Gazebo ROS2_CONTROL plugin ===== -->
-        <!--
         <gazebo>
             <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
                 <parameters>$(find solo12_gazebo)/config/solo12_controllers.yaml</parameters>
             </plugin>
         </gazebo>
-        -->
-        
-        <gazebo reference="world" />
         
         <gazebo reference="${prefix}base_link">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="0.0"/>
-            <mu2 value="0.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
+            <material>Gazebo/DarkGrey</material>
         </gazebo>
 
         <gazebo reference="${prefix}FL_SHOULDER">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
 
         <gazebo reference="${prefix}FL_UPPER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}FL_LOWER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}FL_FOOT">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}FR_SHOULDER">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}FR_UPPER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}FR_LOWER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}FR_FOOT">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HL_SHOULDER">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HL_UPPER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HL_LOWER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HL_FOOT">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HR_SHOULDER">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HR_UPPER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HR_LOWER_LEG">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
         <gazebo reference="${prefix}HR_FOOT">
+            <!-- <turnGravityOff>false</turnGravityOff>
             <selfCollide>true</selfCollide>
-            <mu1 value="1.0"/>
-            <mu2 value="1.0"/>
             <kp value="10000000.0"/>
             <kd value="1.0"/>
-            <!-- <fdir1 value="1 0 0"/> -->
+            <fdir1 value="1 0 0"/> -->
+            <mu1 value="0.2"/>
+            <mu2 value="0.2"/>
             <material>Gazebo/Grey</material>
-            <turnGravityOff>false</turnGravityOff>
         </gazebo>
 
     </xacro:macro>
