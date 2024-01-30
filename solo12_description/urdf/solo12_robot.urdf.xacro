@@ -1,28 +1,30 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="solo12">
 
-    <!--
+        <xacro:arg name="prefix" default="" />     
+        <xacro:arg name="use_gazebo_classic" default="false" />
 
-    <xacro:arg  name="ros2_controllers_file_path" 
-                default="$(find solo12_gazebo)/config/controllers.yaml"/>
-    -->
+        <!-- Import solo12 macro -->
+        <xacro:include  filename="$(find solo12_description)/urdf/solo12.urdf.xacro" />
+        
+        <!-- Import solo12 ros2_control description -->
+        <xacro:include  filename="$(find solo12_description)/urdf/solo12.ros2_control.xacro" />
 
-    <xacro:include  filename="$(find solo12_description)/urdf/solo12.gazebo.xacro" />
-    <xacro:solo12_gazebo  
-            prefix="" />
-    
-    
-    <!-- common gazebo stuff -->
-    <!--<xacro:include  filename="$(find solo12_description)/urdf/common.gazebo.xacro" />-->
+        <!-- common gazebo stuff -->
+        <!--<xacro:include  filename="$(find solo12_description)/urdf/common.gazebo.xacro" />-->
+        
+        <link name="dummy_link" />
+        
+        <xacro:solo12_quadruped   
+          parent="dummy_link" prefix="$(arg prefix)" />
 
-    <!-- solo -->
-    <xacro:include  filename="$(find solo12_description)/urdf/solo12.urdf.xacro" />
-    <xacro:solo12_quadruped   
-            prefix="" />
+        <xacro:solo12_ros2_control 
+          name="solo12" prefix="$(arg prefix)" use_gazebo_classic="$(arg use_gazebo_classic)" />
 
-    <!-- ROS2_CONTROL -->
-    <xacro:include  filename="$(find solo12_description)/urdf/solo12.ros2control.xacro" />
-    <xacro:solo12_ros2control 
-            prefix="" />
+        <xacro:if value="$(arg use_gazebo_classic)">
+          <!-- Import Gazebo Classic definitions + plugin -->
+          <xacro:include filename="$(find solo12_description)/urdf/solo12.gazebo.xacro" />
+          <xacro:solo12_gazebo prefix="$(arg prefix)" />
+        </xacro:if>
 
 </robot>
