@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <xacro:macro name="solo12_quadruped" params="prefix">
+    <xacro:macro name="solo12_quadruped" params="parent prefix">
 
         <!--The root link ${prefix}base_link has an inertia specified in 
             the URDF, but KDL does not support a root link with an inertia.  
             As a workaround, you can add an extra dummy link to your URDF.-->
-        <link name="world" />
-        <joint name="world_joint" type="fixed">
-            <parent link="world" />
+
+        <joint name="${prefix}dummy_joint" type="fixed">
+            <parent link="${parent}" />
             <child link="${prefix}base_link" />
-            <origin rpy="0 0 0" xyz="0 0 0" />
         </joint>
+
         <link name="${prefix}base_link">
             <!-- BASE LINK INERTIAL -->
             <inertial>
