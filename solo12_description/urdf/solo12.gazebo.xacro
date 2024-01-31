@@ -11,191 +11,213 @@
         </gazebo>
         
         <gazebo reference="${prefix}base_link">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/DarkGrey</material>
+            <mu1>0.05</mu1>
+            <mu2>0.05</mu2>
+            <!-- <kp>1000000.0</kp>
+            <kd>1.0</kd> -->
+            <maxVel>0.01</maxVel>
+            <material>Gazebo/DarkGrey </material>
         </gazebo>
 
         <gazebo reference="${prefix}FL_SHOULDER">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>  
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/PioneerBody</material>
         </gazebo>
 
 
         <gazebo reference="${prefix}FL_UPPER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2> 
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/Orange</material>
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}FL_LOWER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>    
+            <fdir1>1 0 0</fdir1>
+            <kp>2147483647.0</kp>
+            <kd>1.0</kd>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide> 
+            <material>Gazebo/DarkYellow</material>
+            <minDepth>0.001</minDepth> 
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}FL_FOOT">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.9</mu1>
+            <mu2>0.9</mu2>
+            <fdir1>1 1 0</fdir1>
+            <kp value="2147483647.0" />
+            <kd value="100.0" />
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <minDepth>0.001</minDepth> 
+            <restitution_coefficient>1</restitution_coefficient>
+            <threshold>0</threshold>
+            <material>Gazebo/DarkGrey</material>
         </gazebo>
 
         <gazebo reference="${prefix}FR_SHOULDER">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>  
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/PioneerBody</material>
         </gazebo>
 
         <gazebo reference="${prefix}FR_UPPER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2> 
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/Orange</material>
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}FR_LOWER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>    
+            <fdir1>1 0 0</fdir1>
+            <kp>2147483647.0</kp>
+            <kd>1.0</kd>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide> 
+            <material>Gazebo/DarkYellow</material>
+            <minDepth>0.001</minDepth> 
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}FR_FOOT">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.9</mu1>
+            <mu2>0.9</mu2>
+            <fdir1>1 1 0</fdir1>
+            <kp value="2147483647.0" />
+            <kd value="100.0" />
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <minDepth>0.001</minDepth> 
+            <restitution_coefficient>1</restitution_coefficient>
+            <threshold>0</threshold>
+            <material>Gazebo/DarkGrey</material>
         </gazebo>
 
         <gazebo reference="${prefix}HL_SHOULDER">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>  
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/PioneerBody</material>
         </gazebo>
 
         <gazebo reference="${prefix}HL_UPPER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2> 
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/Orange</material>
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}HL_LOWER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>    
+            <fdir1>1 0 0</fdir1>
+            <kp>2147483647.0</kp>
+            <kd>1.0</kd>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide> 
+            <material>Gazebo/DarkYellow</material>
+            <minDepth>0.001</minDepth> 
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}HL_FOOT">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.9</mu1>
+            <mu2>0.9</mu2>
+            <fdir1>1 1 0</fdir1>
+            <kp value="2147483647.0" />
+            <kd value="100.0" />
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <minDepth>0.001</minDepth> 
+            <restitution_coefficient>1</restitution_coefficient>
+            <threshold>0</threshold>
+            <material>Gazebo/DarkGrey</material>
         </gazebo>
 
         <gazebo reference="${prefix}HR_SHOULDER">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>  
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/PioneerBody</material>
         </gazebo>
 
         <gazebo reference="${prefix}HR_UPPER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2> 
+            <kp value="2147483647.0"/>
             <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <material>Gazebo/Orange</material>
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}HR_LOWER_LEG">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.2</mu1>
+            <mu2>0.2</mu2>    
+            <fdir1>1 0 0</fdir1>
+            <kp>2147483647.0</kp>
+            <kd>1.0</kd>
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide> 
+            <material>Gazebo/DarkYellow</material>
+            <minDepth>0.001</minDepth> 
+            <!-- <implicitSpringDamper>1</implicitSpringDamper>
+            <springStiffness>100</springStiffness> -->
         </gazebo>
 
         <gazebo reference="${prefix}HR_FOOT">
-            <!-- <turnGravityOff>false</turnGravityOff>
-            <selfCollide>true</selfCollide>
-            <kp value="10000000.0"/>
-            <kd value="1.0"/>
-            <fdir1 value="1 0 0"/> -->
-            <mu1 value="0.2"/>
-            <mu2 value="0.2"/>
-            <material>Gazebo/Grey</material>
+            <mu1>0.9</mu1>
+            <mu2>0.9</mu2>
+            <fdir1>1 1 0</fdir1>
+            <kp value="2147483647.0" />
+            <kd value="100.0" />
+            <maxVel>0.01</maxVel>
+            <self_collide>1</self_collide>
+            <minDepth>0.001</minDepth> 
+            <restitution_coefficient>1</restitution_coefficient>
+            <threshold>0</threshold>
+            <material>Gazebo/DarkGrey</material>
         </gazebo>
 
     </xacro:macro>
