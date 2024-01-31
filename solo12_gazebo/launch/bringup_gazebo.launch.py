@@ -139,7 +139,6 @@ def generate_launch_description():
         package="controller_manager",
         executable="spawner",
         arguments=["forward_position_controller", "-c", "/controller_manager"],
-        #arguments=["solo12_controller", "-c", "/controller_manager"],
     )
 
     # Delay rviz start after `joint_state_broadcaster`
