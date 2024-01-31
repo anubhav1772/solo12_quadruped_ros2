@@ -59,7 +59,7 @@
             <axis xyz="1 0 0" />
             <origin rpy="0 0 0" xyz="0.1946 0.0875 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FL_SHOULDER">
@@ -104,7 +104,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 0.014 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FL_UPPER_LEG">
@@ -154,7 +154,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 0.03745 -0.16" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FL_LOWER_LEG">
@@ -203,7 +203,7 @@
             <!-- Limits (usefull?) -->
             <limit effort="1000" lower="-10" upper="10" velocity="1000" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FL_FOOT">
@@ -253,7 +253,7 @@
             <axis xyz="1 0 0" />
             <origin rpy="0 0 0" xyz="0.1946 -0.0875 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FR_SHOULDER">
@@ -298,7 +298,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 -0.014 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FR_UPPER_LEG">
@@ -348,7 +348,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 -0.03745 -0.16" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FR_LOWER_LEG">
@@ -397,7 +397,7 @@
             <!-- Limits (usefull?) -->
             <limit effort="1000" lower="-10" upper="10" velocity="1000" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}FR_FOOT">
@@ -447,7 +447,7 @@
             <axis xyz="1 0 0" />
             <origin rpy="0 0 0" xyz="-0.1946 0.0875 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HL_SHOULDER">
@@ -492,7 +492,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 0.014 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HL_UPPER_LEG">
@@ -542,7 +542,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 0.03745 -0.16" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HL_LOWER_LEG">
@@ -591,7 +591,7 @@
             <!-- Limits (usefull?) -->
             <limit effort="1000" lower="-10" upper="10" velocity="1000" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HL_FOOT">
@@ -641,7 +641,7 @@
             <axis xyz="1 0 0" />
             <origin rpy="0 0 0" xyz="-0.1946 -0.0875 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HR_SHOULDER">
@@ -686,7 +686,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 -0.014 0" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HR_UPPER_LEG">
@@ -736,7 +736,7 @@
             <axis xyz="0 1 0" />
             <origin rpy="0 0 0" xyz="0 -0.03745 -0.16" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HR_LOWER_LEG">
@@ -785,7 +785,7 @@
             <!-- Limits (usefull?) -->
             <limit effort="1000" lower="-10" upper="10" velocity="1000" />
             <!-- pybullet simulation parameters -->
-            <dynamics damping="0.0" friction="0.0" />
+            <dynamics damping="0.01" friction="10000"/>
         </joint>
 
         <link name="${prefix}HR_FOOT">
