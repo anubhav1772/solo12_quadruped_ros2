@@ -47,12 +47,14 @@ public:
 protected:
   /// The size of this vector is (standard_interfaces_.size() x nr_joints)
   std::vector<double> joint_position_command_;
-  std::vector<double> joint_velocities_command_;
+  //std::vector<double> joint_velocities_command_;
+  //std::vector<double> joint_effort_command_;
   std::vector<double> joint_position_;
   std::vector<double> joint_velocities_;
+  std::vector<double> joint_efforts_;
 
   std::unordered_map<std::string, std::vector<std::string>> joint_interfaces = {
-    {"position", {}}, {"velocity", {}}};
+    {"position", {}}, {"velocity", {}}, {"effort", {}}};
 };
 
 }  // namespace solo12_hardware
